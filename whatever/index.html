@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Data Visualization</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"> Lattitude </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="plots.html" role="button" aria-haspopup="true" aria-expanded="false">
+              Plots
+              <span class="caret"></span></a>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="Preview">
+                <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+                <a class="dropdown-item" href="humidity.html">Humididty</a>
+                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="windspeed.html">Windspeed</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Comparison</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Data</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class = "container">
+      <!-- row 1 -->
+      <div class="row">
+        <div class="co-xs-12">
+          <div class="box empty">gray spacer</div>
+        </div>
+      </div>
+      <!-- row 2 -->
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="box main pull-left">
+            <h1> Summary: Lattitude vs. X </h1>
+            <img src="koublis.jpg" alt = "tree"/>
+            <p> You probably haven't heard of them shaman 3 wolf moon fingerstache. Meh portland leggings, tbh synth flannel swag XOXO artisan vinyl venmo. Humblebrag bitters biodiesel, whatever craft beer taiyaki listicle knausgaard next level typewriter cold-pressed fashion axe. Vice ramps tofu, occupy 8-bit disrupt helvetica chicharrones. </p>
+           </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="box main"><h2> Visualizations </h2>
+            <a href="#">
+            <img src="cat_one.jpg" id=upper_right alt="cat_one"/>
+            </a>
+            <a href="#">
+            <img src="cat_two.jpg" id=upper_left alt="cat_two"/>
+            </a href="#">
+            <img src="cat_three.jpg" id=lower_right alt="cat_three"/>
+            <img src="cat_four.jpg" id=lower_left alt="cat_four"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- "col-xs-3 col-sm-6 col-md-12" -->
+
+  </body></html>
