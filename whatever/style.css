@@ -27,14 +27,6 @@ body {background-color: gray;}
   background-color:teal;
   color: red; }
 
-
-  /* .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus{
-      background-image:none;
-      color: #fff;
-      background-color: rgba(0,0,0,0.5);
-  } */
-
-
   .box {
     min-height: 50px;
     padding: 5px;
@@ -51,6 +43,7 @@ body {background-color: gray;}
     background: white;
     color: black;
     border: black;
+
   }
 
   h1 { color: teal;
@@ -73,48 +66,22 @@ body {background-color: gray;}
   border:1px solid black;
   }
 
+  p.index_first {
+    text-indent: 5em;
+    color: blue;
+    margin: 10px;
+  }
+  p.index_second {
+    text-indent: 5em;
+    margin: 10px;
+  }
 
-  img #pull-left {width: 200 px;
-  height: 50px;
+  .pull-left>img {max-width: 200px;
+	height:auto;
   float: left;
-  padding: 10px;}
-  /* padding-left: 10px;
-  padding-right:10px;
-  padding-bottom: 10px; } */
-
-
-
-  .upper_left {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-  width: 50px;
-  height: 50px;
-  padding: 10px;
   }
 
-  /* #upper_right {
-	position: absolute;
-	top: 0px;
-	right: 0px;
-  width: 50px;
-  height: 50px;
-  padding: 10px;
+  p.data_first {
+    color: blue;
+    margin-left: 20px;
   }
-
-  #lower_left {
-	position: absolute;
-	bottom: 0px;
-	left: 0px;
-  width: 50px;
-  height: 50px;
-  padding: 10px;
-  }
-  #lower_right {
-	bottom: 0px;
-	right: 0px;
-	position: absolute;
-  width: 50px;
-  height: 50px;
-  padding: 10px;
-  } */
