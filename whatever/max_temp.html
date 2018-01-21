@@ -1,22 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Max Temperature</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" 
-        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-        <link rel"stylesheet" href="stylesheet.css">
-    </head>
-    <body>
+    <title>Data Visualization</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"> Lattitude </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" role="button" aria-haspopup="true" aria-expanded="false">
+              Plots
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="Preview">
+                <li> <a class="dropdown-item" href="max_temp.html">Max Temp</a> </li>
+                <li> <a class="dropdown-item" href="humidity.html">Humididty</a> </li>
+                <li> <a class="dropdown-item" href="cloudiness.html">Cloudiness</a> </li>
+                <li> <a class="dropdown-item" href="windspeed.html">Windspeed</a> </li>
+              </ul>
+            </li>
 
-    <!-- JavaScript: placed at the end of the document so the pages load faster -->
-    <!-- jQuery library -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    
-    <!-- Popper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    
-    <!-- Latest compiled and minified Bootstrap JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-  </body>
-</html>
+            <li class="nav-item">
+              <a class="nav-link" href="comparisons.html">Comparison</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class = "container">
+      <!-- row 1 -->
+      <div class="row">
+        <div class="co-xs-12">
+          <div class="box empty"></div>
+        </div>
+      </div>
+      <!-- row 2 -->
+      <div class="row">
+        <div class="box col-md-8 main">
+            <h1 > Summary: Lattitude vs. X </h1>
+            <img src="img/max_temp.png" class="viz" alt = "max temp"/>
+            <p class="index_first"> You probably haven't heard of them shaman 3 wolf moon fingerstache. Meh portland leggings, tbh synth flannel swag XOXO artisan vinyl venmo. Humblebrag bitters biodiesel, whatever craft beer taiyaki listicle knausgaard next level typewriter cold-pressed fashion axe. Vice ramps tofu, occupy 8-bit disrupt helvetica chicharrones.
+            </p>
+        </div>
+        <div class="col-md-3 box main">
+            <div class="row">
+              <h2> Visualizations </h2>
+            </div>
+            <div class="row">
+                <a href="max_temp.html" class="col-sm-6">
+                  <img class="img-responsive" src="img/max_temp.png" id=border-highlight alt="max temp"/>
+                </a>
+                <a href="humidity.html" class="col-sm-6">
+                  <img class="img-responsive" src="img/humidity.png" alt="humidity"/>
+                </a>
+            </div>
+            <div class="row">
+                <a href="cloudiness.html" class="col-sm-6">
+                  <img class="img-responsive" src="img/cloudiness.png" alt="cloudiness"/>
+                </a>
+                <a href="windspeed.html" class="col-sm-6">
+                  <img class="img-responsive" src="img/windspeed.png" alt="windspeed"/>
+                </a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- "col-xs-3 col-sm-6 col-md-12" -->
+
+  </body></html>

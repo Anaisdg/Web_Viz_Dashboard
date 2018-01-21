@@ -54,53 +54,70 @@
   <div class="container">
     <div class="row">
       <div class="co-sm-12">
-        <div class="box empty">gray spacer</div>
+        <div class="box empty"></div>
       </div>
     </div>
   </div>
 
-  <!-- second container for description -->
+  <!-- second trial it WORKS KINDA -->
   <div class="container">
     <div class="row">
-      <div class="box col-sm-8 main">
-        <h1> Summary: Lattitude vs. X </h1>
-        <img src="koublis.jpg" class="fancy-image" alt="tree" />
-        <p class="index_first"> You probably haven't heard of them shaman 3 wolf moon fingerstache. Meh portland leggings, tbh synth flannel swag XOXO artisan vinyl venmo. Humblebrag bitters biodiesel, whatever craft beer taiyaki listicle knausgaard next level typewriter cold-pressed
-          fashion axe. Vice ramps tofu, occupy 8-bit disrupt helvetica chicharrones.
-        </p>
-        <p class="index_second">
-          Tumeric disrupt chartreuse mixtape artisan truffaut vice microdosing freegan salvia ennui waistcoat. Polaroid lomo blog tote bag cray keffiyeh waistcoat banh mi. Air plant vape YOLO tacos ramps hashtag chartreuse iPhone taxidermy art party ethical raclette
-          lo-fi leggings. Tacos raclette gochujang art party small batch. Craft beer hexagon prism vexillologist, snackwave vinyl keytar post-ironic intelligentsia next level street art. Roof party williamsburg twee fashion axe, tacos authentic XOXO stumptown
-          vexillologist etsy locavore 8-bit polaroid tousled deep v.
-        </p>
+      <div class="col-sm-8">
+        <div class="box main">
+          <h1> Summary: Lattitude vs. X </h1>
+          <img src="img/max_temp.png" class="fancy-image" alt="max temp" />
+          <p class="index_first"> The purpose of this project was to analye the weather along the equator. Weather data was retrieved from the OpenWeatherMap API. 500+ latitudes and longitudes were randomly generated and CityPy was used to find the nearest city. Matplotlib and
+            Pandas was used to generate a series of scatter plots that display the relationship between weather and latitude. This web vizualization dashboard highlights the relationship between latitude and <a href="max_temp.html"> temperature,</a>
+            <a href="humidity.html"> humidity,</a> <a href="cloudiness.html"> cloudiness, </a> and <a href="windspeed.html">wind speed.</a></p>
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-xs-12">
+        <div class="box main">
+          <h2> Visualizations </h2>
+          <div class="row">
+            <div class="col-md-6 col-lg-6">
+              <a href="max_temp.html">
+                    <img class="img-responsive" src="img/max_temp.png" alt="max temp"/>
+                  </a>
+            </div>
+            <div class="col-md-6 col-lg-6">
+              <a href="humidity.html">
+                    <img class="img-responsive" src="img/humidity.png" alt="humidity"/>
+                  </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-6">
+              <a href="cloudiness.html">
+                    <img class="img-responsive" src="img/cloudiness.png" alt="cloudiness"/>
+                  </a>
+            </div>
+            <div class="col-md-6 col-lg-6">
+              <a href="windspeed.html">
+                    <img class="img-responsive" src="img/windspeed.png" alt="windspeed"/>
+                  </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="box col-sm-3 main">
-        <h2> Visualizations </h2>
-        <div class="row">
-          <a href="max_temp.html" class="col-sm-6">
-                    <img class="img-responsive" src="img/max_temp.png" id=upper_right alt="max temp"/>
-                  </a>
-          <a href="humidity.html" class="col-sm-6">
-                    <img class="img-responsive" src="img/humidity.png" id=upper_left alt="humidity"/>
-                  </a>
-        </div>
-        <div class="row">
-          <a href="cloudiness.html" class="col-sm-6">
-                    <img class="img-responsive" src="img/cloudiness.png" id=lower_right alt="cloudiness"/>
-                  </a>
-          <a href="windspeed.html" class="col-sm-6">
-                    <img class="img-responsive" src="img/windspeed.png" id=lower_left alt="windspeed"/>
-                  </a>
-        </div>
+  <footer class="footer">
+      <div class="container">
+        <a href="https://github.com/Anaisdg">
+          <i class="fa fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/anais-dotis-georgiou-029623113/">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a href="https://twitter.com/AnaisDotis">
+            <i class="fa fa-twitter"></i>
+        </a>
       </div>
-    </div>
-  </div> -->
-  <!-- "col-xs-3 col-sm-6 col-md-12"
+    </footer>
+
 
 </body>
 

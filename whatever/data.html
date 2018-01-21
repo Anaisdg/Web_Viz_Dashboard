@@ -1,57 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <title>Data Visualization</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+
+<head>
+  <title>Data Visualization</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html"> Lattitude </a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="plots.html" role="button" aria-haspopup="true" aria-expanded="false">
+        <a class="navbar-brand" href="index.html"> Lattitude </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" role="button" aria-haspopup="true" aria-expanded="false">
               Plots
               <span class="caret"></span></a>
-              </a>
-              <div class="dropdown-menu" aria-labelledby="Preview">
-                <a class="dropdown-item" href="max_temp.html">Cody</a>
-                <a class="dropdown-item" href="humidity.html">Humididty</a>
-                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                <a class="dropdown-item" href="windspeed.html">Windspeed</a>
-              </div>
-            </li>
+            <ul class="dropdown-menu" aria-labelledby="Preview">
+              <li> <a class="dropdown-item" href="max_temp.html">Max Temp</a> </li>
+              <li> <a class="dropdown-item" href="humidity.html">Humididty</a> </li>
+              <li> <a class="dropdown-item" href="cloudiness.html">Cloudiness</a> </li>
+              <li> <a class="dropdown-item" href="windspeed.html">Windspeed</a> </li>
+            </ul>
+          </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="comparisons.html">Comparison</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparisons.html">Comparison</a>
+          </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="data.html">Data</a>
-            </li>
-          </ul>
-        </div>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
     <div class = "container-fluid">
       <!-- row 1 -->
       <div class="row">
         <div class="col-sm-12">
-          <div class="box empty">gray spacer</div>
+          <div class="box empty"></div>
         </div>
       </div>
       <!-- row 2 -->
@@ -59,7 +61,7 @@
         <div class="col-sm-12">
           <div class="box main pull-left">
             <h1 > Data </h1>
-            <p class="data_first"> Plottting soothes the soul</p>
+            <p class="data_first"> Weather Data </p>
             <div> <table class="table table-bordered table-hover table-condensed">
             <tbody><tr>
             <td>City_ID</td>
