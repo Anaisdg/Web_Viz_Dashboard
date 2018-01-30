@@ -1,90 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <title>Data Visualization</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+
+<head>
+  <title>Data Visualization</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html"> Lattitude </a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" role="button" aria-haspopup="true" aria-expanded="false">
+        <a class="navbar-brand" href="index.html"> Lattitude </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" role="button" aria-haspopup="true" aria-expanded="false">
               Plots
               <span class="caret"></span></a>
-              <ul class="dropdown-menu" aria-labelledby="Preview">
-                <li> <a class="dropdown-item" href="max_temp.html">Max Temp</a> </li>
-                <li> <a class="dropdown-item" href="humidity.html">Humididty</a> </li>
-                <li> <a class="dropdown-item" href="cloudiness.html">Cloudiness</a> </li>
-                <li> <a class="dropdown-item" href="windspeed.html">Windspeed</a> </li>
-              </ul>
-            </li>
+            <ul class="dropdown-menu" aria-labelledby="Preview">
+              <li> <a class="dropdown-item" href="max_temp.html">Max Temp</a> </li>
+              <li> <a class="dropdown-item" href="humidity.html">Humididty</a> </li>
+              <li> <a class="dropdown-item" href="cloudiness.html">Cloudiness</a> </li>
+              <li> <a class="dropdown-item" href="windspeed.html">Windspeed</a> </li>
+            </ul>
+          </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="comparisons.html">Comparison</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparisons.html">Comparison</a>
+          </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="data.html">Data</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
 
-          </ul>
-        </div>
+        </ul>
       </div>
-    </nav>
-    <div class = "container">
-      <!-- row 1 -->
-      <div class="row">
-        <div class="co-xs-12">
-          <div class="box empty"></div>
-        </div>
+    </div>
+  </nav>
+  <div class="container">
+    <!-- row 1 -->
+    <div class="row">
+      <div class="co-xs-12">
+        <div class="box empty"></div>
       </div>
-      <!-- row 2 -->
-      <div class="row">
-        <div class="box col-md-8 main">
-            <h1 > Summary: Lattitude vs. X </h1>
-            <img src="img/cloudiness.png" class="viz" alt = "cloudiness"/>
-            <p class="index_first"> This graph illustrates the relationship between latitude and humidity.
-            </p>
-        <div class="col-md-3 box main">
-            <div class="row">
-              <h2> Visualizations </h2>
-            </div>
-            <div class="row">
-                <a href="max_temp.html" class="col-sm-6">
+    </div>
+    <!-- row 2 -->
+    <div class="row">
+      <div class="box col-md-8 main">
+        <h1> Summary: Lattitude vs. X </h1>
+        <img src="img/cloudiness.png" class="viz" alt="cloudiness" />
+        <p class="index_first"> This graph illustrates the relationship between latitude and cloudiness. </p>
+      </div>
+      <div class="col-md-3 box main">
+        <div class="row">
+          <h2> Visualizations </h2>
+        </div>
+        <div class="row">
+          <a href="max_temp.html" class="col-sm-6">
                   <img class="img-responsive" src="img/max_temp.png" alt="max temp"/>
                 </a>
-                <a href="humidity.html" class="col-sm-6">
+          <a href="humidity.html" class="col-sm-6">
                   <img class="img-responsive" src="img/humidity.png" alt="humidity"/>
                 </a>
-            </div>
-            <div class="row">
-                <a href="cloudiness.html" class="col-sm-6">
+        </div>
+        <div class="row">
+          <a href="cloudiness.html" class="col-sm-6">
                   <img class="img-responsive" src="img/cloudiness.png" id=border-highlight alt="cloudiness"/>
                 </a>
-                <a href="windspeed.html" class="col-sm-6">
+          <a href="windspeed.html" class="col-sm-6">
                   <img class="img-responsive" src="img/windspeed.png" alt="windspeed"/>
                 </a>
-            </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- "col-xs-3 col-sm-6 col-md-12" -->
+  <!-- "col-xs-3 col-sm-6 col-md-12" -->
 
-  </body></html>
+</body>
+
+</html>
